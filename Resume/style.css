@@ -1,0 +1,149 @@
+ .underheader{
+    border: solid rgb(164, 237, 62);
+ }
+
+ #underheader_email{
+    position: relative;
+    color: aqua;
+    bottom: 1rem;
+ }
+ 
+ main {
+    max-width: 900px;
+    margin: auto;
+    padding: 2rem;
+}
+
+ body {
+    background-color:white;
+    line-height: 1.6;
+}
+
+.sectionheader{
+    color: rgb(14, 179, 154);
+}
+
+table{
+    margin: 14px;
+    border-collapse: separate;
+    border-spacing: 7px;
+    padding: 7px;
+    width: 99%;
+}
+
+caption{
+    font-size: 25px;
+    font-style: italic;
+    color: rgb(242, 66, 178);
+    letter-spacing: 2px;
+    text-decoration: underline;
+    margin-bottom: 14px;
+}
+th{
+    font-style: italic;
+    font-variant: small-caps;
+    color: darkolivegreen;
+}
+
+td{
+    border: 1px solid;
+    vertical-align: top;
+    padding: 7px;
+}
+
+#showBtn0{
+    position: absolute;
+    right: 50%;
+    top: 55%;
+    border: 2px solid rgb(43, 0, 255);
+    font-size: 15px;
+    resize: none;
+}
+
+nav {
+    background-color: #374151;
+    padding: 0.75rem;
+    text-align: center;
+}
+
+nav a {
+    color: #ffffff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffe342;
+    text-decoration: underline;
+}
+
+header {
+    background-color: #1f2933;
+    color: #ffffff;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.form_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10rem;
+    max-width: 900px;
+}
+
+.form_column {
+    display: flex;
+    flex-direction: column;
+}
+
+.form_column label {
+    margin-top: 0.75rem;
+    font-weight: 600;
+}
+
+.form_column input,
+.form_column textarea,
+.form_column select {
+    margin-top: 0.25rem;
+    padding: 0.2rem;
+    font-size: 1rem;
+}
+
+fieldset {
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+}
+
+.form_buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    max-width: 30px;
+}
+
+footer{
+    color: rgb(255, 0, 0);
+    text-align: center;
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+    list-style: square;
+}
+
+#currentDate{
+    position: absolute;
+    bottom: 70%;
+    right: 20%;
+    color: #f0701b;
+}
+
+#title_principal{
+    text-align: center;
+    color: #cd0b0b;
+    margin-bottom: 20px;
+}
