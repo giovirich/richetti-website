@@ -127,6 +127,7 @@ body {
     display: flex;
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 90px;
+    font-size: 16px;
 }
 
 .project_table caption{
@@ -145,29 +146,12 @@ body {
 .project_table table{
     border: 2px solid black;
     margin: 0 auto;
-    border-spacing: 1.5vw;
+    border-spacing: 1.5rem;
     border-collapse: separate;
-    width: 50%;
-
-}
-
-.project_table tr:nth-child(2){
-    background-color: #dcef90;
-}
-
-.project_table td{
-    vertical-align: top;
-    padding: 0.5vw;
-    text-align: center;
-}
-
-.project_table td:hover{
-    color: rgb(57, 25, 244);
-    cursor: text;
+    width: 60%;
 }
 
 .project_table th{
-    margin: auto;
     border: 3px solid blue;
     border-radius: 50px;
     color: rgb(255, 4, 4);
@@ -175,7 +159,41 @@ body {
     padding: 5px;
 }
 
+.project_table th:nth-child(2){
+    /* border: 3px solid blue;
+    border-radius: 50px; */
+    padding-top: 2px;
+    padding-bottom: 2px;
+    
+}
+
+.project_table tr:nth-child(2n+2){
+    background-color: #dcef90;
+}
+
+.project_table td:nth-child(2n+2){
+    font-style: italic;
+}
+
+.project_table td:nth-child(3){
+    font-weight: bold;
+}
+
+.project_table td{
+    vertical-align: top;
+    padding: 0.5vw;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.project_table td:hover{
+    color: rgb(57, 25, 244);
+    cursor: text;
+}
+
 footer{
+    display: flex;
     color: rgb(255, 0, 0);
-    text-align: right;
+    margin-top: 75px;
+    justify-content: end;
 }
