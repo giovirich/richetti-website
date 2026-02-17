@@ -1,6 +1,48 @@
+ * {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+    list-style: square;
+}
+
  .underheader{
     border: solid rgb(164, 237, 62);
  }
+
+ .nav_bar {
+    display: flex;
+    background-color: #374151;
+    padding: 15px;
+    text-align: center;
+    justify-content: center;
+    max-width: 900px;
+    margin-inline: auto;
+    margin-bottom: -30px;
+}
+
+.nav_bar a {
+    color: #ffffff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav_bar a:hover {
+    color: #ffe342;
+    text-decoration: underline;
+}
+
+.professional_text {
+    position: relative;
+}
+
+#currentDate{
+    position: absolute;
+    top: 8px;
+    right: 0;
+    color: #f0701b;
+}
  
  main {
     max-width: 900px;
@@ -18,7 +60,8 @@
 }
 
 .sectionheader h2,
-.sectionheader h3{
+.sectionheader h3,
+.sectionheader h4{
     color: rgb(14, 179, 154);
     display: flex;
     justify-content: center;
@@ -82,24 +125,6 @@ td{
     color: #153ffb;
 }
 
-nav {
-    background-color: #374151;
-    padding: 0.75rem;
-    text-align: center;
-}
-
-nav a {
-    color: #ffffff;
-    margin: 0 10px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav a:hover {
-    color: #ffe342;
-    text-decoration: underline;
-}
-
 header {
     background-color: #1f2933;
     color: #ffffff;
@@ -107,11 +132,19 @@ header {
     text-align: center;
 }
 
+.center_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
 .form_container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 10rem;
+    gap: 8rem;
     max-width: 900px;
+    text-align: center;
 }
 
 .form_column {
@@ -138,31 +171,23 @@ fieldset {
 }
 
 .form_buttons {
-    display: grid;
+    display: flex;
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
-    max-width: 30px;
+    max-width: 100%;
 }
 
-* {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-ul {
-    list-style: square;
-}
-
-#currentDate{
-    position: absolute;
-    right: 20px;
-    padding-top: 60px;
-    color: #f0701b;
-}
-
-#title_principal{
+.sectionheader section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    color: #cd0b0b;
-    margin-bottom: 20px;
+}
+
+.sectionheader ul {
+    list-style-position: inside;
+    padding: 0;
+    text-align: left;
 }
 
 footer{
