@@ -1,12 +1,6 @@
  .underheader{
     border: solid rgb(164, 237, 62);
  }
-
- #underheader_email{
-    position: relative;
-    color: aqua;
-    bottom: 1rem;
- }
  
  main {
     max-width: 900px;
