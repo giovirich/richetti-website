@@ -1,32 +1,28 @@
 function showDates(){
     let datebox = document.getElementById("datebox");
-    datebox.textContent = "November 2025 - Current";
+    let btn = document.getElementById("showBtn0");
 
-    let datebox1 = document.getElementById("datebox1");
-    datebox1.textContent = "February 2025 - June 2025";
+    if(datebox.textContent === ""){
+        datebox.textContent = "September 2018 - February 2021";
+        document.getElementById("datebox1").textContent = "August 2023 - February 2026";
+        document.getElementById("datebox2").textContent = "February 2021 - August 2023"
+        document.getElementById("datebox3").textContent = "November 2025 - December 2027"
+        document.getElementById("datebox4").textContent = "October 2018 - March 2021"
+        document.getElementById("datebox5").textContent = "February 2026"
+        document.getElementById("datebox6").textContent = "In progress"
+        document.getElementById("datebox7").textContent = "July 2025 - October 2025"
 
-    let datebox2 = document.getElementById("datebox2");
-    datebox2.textContent = "August 2024 - February 2025";
+        btn.textContent = "Clear dates";
+        console.log("Dates are now visible");
 
-    let datebox3 = document.getElementById("datebox3");
-    datebox3.textContent = "August 2023 - September 2024";
+    }else{
+        let allDateboxes = document.querySelectorAll('[id^="datebox"]');
+        allDateboxes.forEach(box => box.textContent = "");
 
-    let datebox4 = document.getElementById("datebox4");
-    datebox4.textContent = "February 2021 - August 2023";
-
-    let datebox5 = document.getElementById("datebox5");
-    datebox5.textContent = "September 2018 - February 2021";
-
-    let datebox6 = document.getElementById("datebox6");
-    datebox6.textContent = "November 2025 - December 2027";
-
-    let datebox7 = document.getElementById("datebox7");
-    datebox7.textContent = "July 2025 - October 2025";
-
-    let datebox8 = document.getElementById("datebox8");
-    datebox8.textContent = "October 2018 - March 2021";
-
-    console.log("Dates are now visible");
+        btn.textContent = "Populate dates";
+        console.log("Dates are now cleared");
+    }
+    
  }
 
 // Today's date
