@@ -1,0 +1,100 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    zoom: normal;
+}
+
+.welcome_msg{
+    display: flex;
+    background: linear-gradient(95deg, red, green, blue);
+    width: 300px;
+    height: 100px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%);
+    animation: welcomemsg 5s linear 2s normal;
+    align-items: center;
+    justify-content: center;
+    transition: width 1s, height 1s;
+}
+
+.welcome_msg:hover{
+    width: 150px;
+}
+
+@keyframes welcomemsg{
+    0% {color: green; left: 500px; top: 0px;}
+    25% {color: aqua; left: 250px; top: 100px}
+    50% {color: coral;left: 750px; top: 100px;}
+    75% {color: yellow; left: 250px; top: 0px;}
+    100% {color: papayawhip; left: 500px; top: 0px;}
+}
+
+#grid_cont{
+    display: grid;
+    margin-top: 300px;
+    grid-template-columns: 250px 250px;
+    grid-template-rows: auto auto auto;
+    gap: 10px 50px;
+    justify-content: center;
+    transition: grid-template-columns 1s, grid-template-rows 1s, gap 1.5s;
+}
+
+#grid_cont:hover{
+    gap: 50px 150px;
+}
+
+#grid_cont > div{
+    text-align: center;
+    background: lightblue;
+    border: 3px solid yellow;
+    padding: 20px;
+}
+
+#back_btn{
+    position: fixed;
+    left: 48.5%;
+    top: 250px;
+}
+
+.form_cont{
+    position: relative;
+    margin-top: 50px;
+    font: 13px Arial;
+    background-color: #c3f61b;
+    width: 500px;
+    padding: 10px;
+}
+
+label{
+    width: 50px;
+    display: inline-block;
+    text-align: left;
+}
+
+input[type=text], input[type=email], select {
+   box-sizing: border-box;
+   width: 250px;
+   padding: 10px;
+   border: 1px solid #aaa;
+   border-radius: 4px;
+}
+
+input[type=submit] {
+   width: 200px;
+   background-color: #09f;
+   color: white;
+   padding: 15px;
+   margin: 10px 0;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+}
+
+input[type=search]{
+    float: right;
+}

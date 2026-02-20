@@ -53,7 +53,7 @@ body {
     line-height: 1.6;
 }
 
-.contact_me{
+/* .contact_me{
     display: flex;
     justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
@@ -121,7 +121,7 @@ body {
 .contact_me #submitBtn:hover {
     background-color: #d15a1b;
     color: #15fb52;
-}
+} */
 
 .project_table{
     display: flex;
