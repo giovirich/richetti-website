@@ -4,8 +4,24 @@
     --header-color: #d2ff3d;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 *{
-    font-family:Arial, Helvetica, sans-serif;
+    padding: 0;
+    bottom: 0;
+    box-sizing: border-box;
+    font-family: "Archivo", sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100dvh;
+}
+
+img{
+    max-inline-size: 60%;
 }
 
 .website_cover_parent{
@@ -19,7 +35,6 @@
 
 #website_cover{
     padding-bottom: 3rem;
-    width: 60%;
     height: auto;
     cursor: pointer;
 }
@@ -126,7 +141,6 @@ body {
 .project_table{
     display: flex;
     font-family: Arial, Helvetica, sans-serif;
-    margin-top: 20px;
     font-size: 16px;
 }
 
