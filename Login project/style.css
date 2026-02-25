@@ -131,3 +131,8 @@ body{
     color: #fff;
     text-decoration: none;
 }
+
+.login #goback{
+    margin-inline: auto;
+    transition: background ease 5s;
+}
