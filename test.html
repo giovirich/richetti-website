@@ -1,20 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-   <title>Magic 8 Ball</title>
+   <title>JavaScript Demo</title>
    <meta charset="UTF-8">
+   <script src="./test.js" defer></script>
 </head>
 <body>
-   <h1>Magic 8 Ball</h1>
+   <h1>Popup Demo</h1>
    <script>
+   
+   let okPressed = window.confirm("Would you like to see a popup window?");
+   if (okPressed) {
+      let myWindow = window.open("", "", "width=250, height=100");
+      myWindow.document.writeln("<h1>Hello, Popup!</h1>");
+      document.writeln(window.navigator.userAgent)
+   }
+   console.log("Hello users");
+   console.dir();
 
-   // Possible 8 Ball responses
-   let responses = [ "Without a doubt", "Ask again later", "Don't count on it" ];
+   
 
-   // Display a randomly chosen response
-   let randomNum = Math.floor(Math.random() * responses.length);
-   document.writeln("<p>Magic 8 Ball says... <strong>" + responses[randomNum] + "</strong>.</p>");
-
+   
    </script>
 </body>
 </html>
