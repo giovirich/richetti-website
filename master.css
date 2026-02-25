@@ -162,7 +162,8 @@ body {
     margin: 0 auto;
     border-spacing: 1.5rem;
     border-collapse: separate;
-    width: 60%;
+    width: 80%;
+    border-radius: 40px;
 }
 
 .project_table th{
