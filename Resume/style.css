@@ -176,6 +176,19 @@ fieldset {
     max-width: 100%;
 }
 
+.form_buttons input[type="submit"],
+.form_buttons input[type="reset"]{
+    padding: 10px 20px;
+    width: auto;
+    font-size: 0.9rem;
+    cursor: pointer;
+    border-radius: 40px;
+    border: none;
+    background: #0078ff;
+    background: linear-gradient(45deg, #3cff35, #0a23e3);
+        
+}
+
 .sectionheader section {
     display: flex;
     flex-direction: column;
@@ -187,6 +200,34 @@ fieldset {
     list-style-position: inside;
     padding: 0;
     text-align: left;
+}
+
+@media (max-width: 768px){
+    .center_container .form_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    width: 90%;
+}
+    .form_buttons {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        border-radius: 40px;
+    }
+    .form_buttons input[type="submit"],
+    .form_buttons input[type="reset"]{
+        padding: 10px 20px;
+        width: auto;
+        font-size: 0.9rem;
+        cursor: pointer;
+        margin: 0 auto;       /* Centers them if they are in a grid */
+        border-radius: 40px;
+        border: none;
+        background: #0078ff;
+        background: linear-gradient(45deg, #3cff35, #0a23e3);
+        
+}
 }
 
 footer{
