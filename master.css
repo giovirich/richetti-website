@@ -173,7 +173,7 @@ body {
     padding: 5px;
 }
 
-.project_table tr:nth-child(2n+2){
+.project_table tr:nth-child(1n+2){
     background-color: #dcef90;
 }
 
