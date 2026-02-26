@@ -17,7 +17,7 @@ body{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    height: 100dvh;
+    min-height: 100dvh;
 }
 
 img{
@@ -67,76 +67,6 @@ body {
     background-color: var(--bg-color);
     line-height: 1.6;
 }
-
-/* .contact_me{
-    display: flex;
-    justify-content: center;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-}
-
-.contact_me ::placeholder{
-    text-align: center;
-}
-
-.contact_me label{
-    display: inline-block;
-    width: 150px;
-    vertical-align:top;
-}
-
-.contact_me input, 
-.contact_me textarea{
-    width: 280px;
-    padding: 0.8vh;
-    margin-bottom: 1.5vh;
-}
-
-.contact_me .required::after{
-    content: "*";
-    color: red;
-}
-
-.contact_me label + input {
-    background-color: rgb(219, 248, 237);
-}
-
-.contact_me textarea{
-    width: auto;
-}
-
-.contact_me #myta{
-    margin-top: 1rem;
-}
-
-.contact_me #resetBtn{
-    background-color: #4A90E2;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
-    cursor: pointer;
-    margin-right: 2vw;
-}
-
-.contact_me #resetBtn:hover{
-    background-color: #3d7cc4;
-    color: #15fb52;
-}
-
-.contact_me #submitBtn {
-    background-color: #eb6f2c;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
-    cursor: pointer;
-}
-
-.contact_me #submitBtn:hover {
-    background-color: #d15a1b;
-    color: #15fb52;
-} */
 
 .project_table{
     display: flex;
@@ -204,3 +134,53 @@ footer{
     margin-top: 75px;
     justify-content: end;
 }
+
+@media (max-width: 650px) {
+    body{
+        margin: 0;
+        padding: 5px;
+    }
+    img{
+        max-inline-size: 100%;
+    }
+     #nav_bar {
+        display: grid;
+        grid-template-rows: 35px 35px;
+        grid-template-areas: 
+        "home resume"
+        "contact-me cover-letter";
+        width: 95%;
+        row-gap: 10px;
+        margin-top: -35px;
+    }
+    #nav_bar a:nth-child(1){
+        grid-area: home;
+    }
+    #nav_bar a:nth-child(2){
+        grid-area: resume;
+    }
+    #nav_bar a:nth-child(3){
+        grid-area: contact-me;
+    }
+    #nav_bar a:nth-child(4){
+        grid-area: cover-letter;
+    }
+
+    .project_table table {
+        margin-top: -15px;
+        width: 100%;
+        border-spacing: 0.1rem;
+        padding: 15px;
+    }
+
+    .project_table td, .project_table th {
+        font-size: 12px;
+        padding: 10px 7px;
+    }
+
+    footer {
+        justify-content: center;
+        margin-top: 30px;
+    }
+}
+
