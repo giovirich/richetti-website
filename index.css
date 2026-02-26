@@ -161,6 +161,8 @@ footer{
         width: auto;
         border-spacing: 0.1rem;
         padding: 15px;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
     }
 
     .project_table td, .project_table th {
