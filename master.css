@@ -135,7 +135,7 @@ footer{
     justify-content: end;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 600px) {
     body{
         margin: 0;
         padding: 5px;
@@ -147,39 +147,24 @@ footer{
         justify-content: center;
         margin-inline: auto;
     }
-     #nav_bar {
+    #nav_bar {
         display: grid;
-        grid-template-rows: 35px 35px;
-        grid-template-areas: 
-        "home resume"
-        "contact-me cover-letter";
-        width: 95%;
-        row-gap: 10px;
-        margin-top: -35px;
-        margin-inline: auto;
-    }
-    #nav_bar a:nth-child(1){
-        grid-area: home;
-    }
-    #nav_bar a:nth-child(2){
-        grid-area: resume;
-    }
-    #nav_bar a:nth-child(3){
-        grid-area: contact-me;
-    }
-    #nav_bar a:nth-child(4){
-        grid-area: cover-letter;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        height: auto;
+        width: auto;
+        margin-top: -25px;
     }
 
     .project_table table {
         margin-top: -15px;
-        width: 100%;
+        width: auto;
         border-spacing: 0.1rem;
         padding: 15px;
     }
 
     .project_table td, .project_table th {
-        font-size: 12px;
+        font-size: 10px;
         padding: 10px 7px;
     }
 
