@@ -10,22 +10,32 @@ body {
 }
 
 .buttons{
+    display: grid;
+    grid-template-columns: 1fr;
     box-sizing: border-box;
-
+    row-gap: 20px;
 }
 
 .buttons #bgBtn,
-.buttons #regretBtn{
-    background: linear-gradient(45deg, #0924f1, #0ae32b);
+.buttons #regretBtn,
+.buttons #forBtn{
     border-radius: 50px;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.3s ease;
     margin-bottom: 20px;
     padding: 20px;
-    border: 20px;
-    width: 400px;
+    width: 300px;
+}
+
+.buttons button:nth-child(1){
+    background: linear-gradient(45deg, #0ce2be, #dff72c);
+}
+.buttons button:nth-child(2){
+    background: linear-gradient(45deg, #f6358f, #ffaa01);
+}
+.buttons button:nth-child(3){
+    background: linear-gradient(45deg, #bbe20c, #4cc1f0);
 }
 
 
