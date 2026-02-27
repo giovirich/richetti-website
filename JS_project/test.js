@@ -1,28 +1,42 @@
-const colors = ["lightgreen", "skyblue", "coral", "gold", "plum"];
+const colors = ["lightgreen", "skyblue", "coral", "gold", "plum", "red", "purple","cyan"];
 let currentIndex = 0;
-let currentRotation= 0;
+let randomColor1;
+let randomColor2;
+let randomColor3;
+let currentRotation;
+let reverseRotation;
 let textChange = document.getElementById("textChange");
+let buttonContainer = document.getElementsByClassName("buttonContainer");
 
 let bgBtn = document.getElementById("bgBtn");
 bgBtn.addEventListener("click", function(){
     document.body.style.backgroundColor = colors[currentIndex];
+    randomColor1 = colors[Math.floor(Math.random() * colors.length)];
+    randomColor2 = colors[Math.floor(Math.random() * colors.length)];
+    bgBtn.style.background = colors[currentIndex];
     currentIndex = (currentIndex + 1) % colors.length;
     textChange.textContent = "WHEEE";
-    bgBtn.style.background = colors[currentIndex];
-    regretBtn.style.background = colors[currentIndex + 1];
-    forBtn.style.background = colors[currentIndex + 2];
+    regretBtn.style.background = randomColor1;
+    forBtn.style.background = randomColor2;
 
-    currentRotation += 120;
-    document.body.style.transform = `rotate(${currentRotation}deg)`;
+    currentRotation += 180;
+    reverseRotation -= 180;
+    bgBtn.style.transform = `rotate(${currentRotation}deg)`;
+    regretBtn.style.transform = `rotate(${reverseRotation}deg)`;
+    forBtn.style.transform = `rotate(${currentRotation}deg)`;
 });
 
 let regretBtn = document.getElementById("regretBtn");
 regretBtn.addEventListener("click", function(){
     document.body.style.backgroundColor = "white";
-    document.body.style.transform = "rotate(0deg)";
+    document.body.style.transform = `rotate(0deg)`;
     textChange.textContent = "I'm back to normal";
     currentRotation = 0;
     currentIndex = 0;
+    reverseRotation = 0;
+    bgBtn.style.transform = `rotate(${currentRotation}deg)`;
+    regretBtn.style.transform = `rotate(${reverseRotation}deg)`;
+    forBtn.style.transform = `rotate(${currentRotation}deg)`;
     bgBtn.style.background = colors[currentIndex];
     regretBtn.style.background = colors[currentIndex + 1];
     forBtn.style.background = colors[currentIndex + 2];
@@ -32,9 +46,21 @@ regretBtn.addEventListener("click", function(){
 let forBtn = document.getElementById("forBtn");
 forBtn.addEventListener("click", function(){
     for(let times = 0; times < 5; times++){
-        currentRotation += 200;
+        randomColor1 = colors[Math.floor(Math.random() * colors.length)];
+        randomColor2 = colors[Math.floor(Math.random() * colors.length)];
+        randomColor3 = colors[Math.floor(Math.random() * colors.length)];
+        currentRotation += 178;
+        reverseRotation -= 156;
         document.body.style.transform = `rotate(${currentRotation}deg)`;
+        document.body.addEventListener("transitionend", function(){
+            bgBtn.style.transform = `rotate(${currentRotation}deg)`;
+            regretBtn.style.transform = `rotate(${reverseRotation}deg)`;
+            forBtn.style.transform = `rotate(${currentRotation}deg)`;
+        }, {once: true});
     }
+    bgBtn.style.background = randomColor3;
+    regretBtn.style.background = randomColor1;
+    forBtn.style.background = randomColor2;
 });
 
 
