@@ -3,10 +3,18 @@ let currentIndex = 0;
 let randomColor1;
 let randomColor2;
 let randomColor3;
-let currentRotation;
-let reverseRotation;
+let currentRotation = 0;
+let reverseRotation = 0;
 let textChange = document.getElementById("textChange");
 let buttonContainer = document.getElementsByClassName("buttonContainer");
+let activeTimer;
+
+function restartText(textTimer){
+    clearTimeout(activeTimer);
+    activeTimer = setTimeout(() =>{
+        textChange.textContent = "Click bellow";
+    }, textTimer*1000);
+}
 
 let bgBtn = document.getElementById("bgBtn");
 bgBtn.addEventListener("click", function(){
@@ -24,6 +32,7 @@ bgBtn.addEventListener("click", function(){
     bgBtn.style.transform = `rotate(${currentRotation}deg)`;
     regretBtn.style.transform = `rotate(${reverseRotation}deg)`;
     forBtn.style.transform = `rotate(${currentRotation}deg)`;
+    restartText(5);
 });
 
 let regretBtn = document.getElementById("regretBtn");
@@ -40,6 +49,7 @@ regretBtn.addEventListener("click", function(){
     bgBtn.style.background = colors[currentIndex];
     regretBtn.style.background = colors[currentIndex + 1];
     forBtn.style.background = colors[currentIndex + 2];
+    restartText(5);
 });
 
 
@@ -61,39 +71,7 @@ forBtn.addEventListener("click", function(){
     bgBtn.style.background = randomColor3;
     regretBtn.style.background = randomColor1;
     forBtn.style.background = randomColor2;
+    textChange.textContent = "";
+    restartText(5);
 });
-
-
-// const hello = (name, coolness) => 
-//     {console.log(`Hello ${name}`)
-//     console.log(`Your level of swag is: ${coolness}`)};
-
-// hello("BRO","Superb");
-
-// let madLib = function(adverb, noun1, noun2, adjective, verb){
-//     return `The ${adjective} ${noun1} ${adverb} ${verb} ${noun2}`;
-// }
-
-// console.log(madLib("quietly", "dog", "moon", "lazy", "smashed"));
-
-// function showColors(){
-//     for(let diffColors of colors){
-//     // let diffColors = colors[i];
-//     console.log(diffColors);
-//     }
-// }
-
-// showColors();
-
-let dukeScores  = [72, 74, 84, 92, 93, 66, 69, 73, 70, 85, 75, 67, 79];
-let ncScores    = [76, 73, 77, 90, 81, 74, 53, 68, 88, 84, 58, 81, 73];
-let winningTeam = [];
-
-for(let i = 0; i < dukeScores.length; i++){
-    if(dukeScores[i] > ncScores[i]){
-        winningTeam.push("D");
-    }else{
-        winningTeam.push("N");
-    }
-};
 

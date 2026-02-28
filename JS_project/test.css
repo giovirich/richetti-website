@@ -7,28 +7,41 @@
     font-family: "Archivo", sans-serif;
 }
 
-/* body { 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
-    overflow: hidden;
-} */
+@keyframes rainbow{
+    0%{color: #0ce2be;}
+    10%{color: #f6358f;}
+    20%{color: #dff72c;}
+    30%{color: #ffaa01;}
+    40%{color: fuchsia;}
+    50%{color: lime;}
+    60%{color: gold;}
+    70%{color: crimson;}
+    80%{color: coral;}
+    90%{color: lightgoldenrodyellow;}
+    100%{color: indigo;}
+}
 
 body{
-    transition: background-color 0.5s ease, transform 0.5s ease; 
+    transition: background-color 0.5s ease, transform 0.5s ease;
+    height: 100dvh;
+    overflow: hidden;
 }
 
 .bodyHeader{
     display: flex;
     justify-content: center;
-    height: 10px;
+    margin-bottom: -250px;
+}
+
+.bodyHeader > #textChange:hover{
+    scale: 1.9;
 }
 
 #textChange{
     margin-top: 150px;
+    transition: scale 0.3s ease, transform 0.5s ease;
+    animation: rainbow 10s linear infinite;
+    font-size: 70px;
 }
 
 .buttonContainer{
@@ -71,6 +84,21 @@ body{
 }
 .buttons button:nth-child(3){
     background: linear-gradient(45deg, #bbe20c, #4cc1f0);
+}
+
+@media (max-width: 768px) {
+    body{
+        background: white;
+    }
+    #textChange{
+        margin-top: 100px;
+        transition: scale 0.3s ease, transform 0.5s ease;
+        animation: rainbow 10s linear infinite;
+        font-size: 30px;
+        margin-bottom: 100px;
+        }
+    
+    
 }
 
 
