@@ -17,7 +17,9 @@ body{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    min-height: 100dvh;
+    min-height: 100vh;
+    background-color: var(--bg-color);
+    line-height: 1.6;
 }
 
 img{
@@ -27,10 +29,6 @@ img{
 .website_cover_parent{
     display: flex;
     justify-content: center;
-}
-
-.website_cover_parent > a{
-    text-align: center;
 }
 
 #website_cover{
@@ -43,7 +41,7 @@ img{
     display: flex;
     margin-bottom: 2rem;
     background-color: var(--header-color);
-    max-width: 800px;
+    max-width: 1200px;
     justify-content:space-around;
     margin-inline: auto;
     padding: 0.8rem;
@@ -52,20 +50,17 @@ img{
 
 #nav_bar > a{
     color: var(--font-color);
-    font-size: 22px;
+    font-size: 25px;
     font-weight: bold;
     text-decoration: none;
     letter-spacing: 0.5px;
+    transition: scale 0.3s ease;
 }
 
 #nav_bar > a:hover{
     color: rgb(244, 11, 11);
     cursor: pointer;
-}
-
-body {
-    background-color: var(--bg-color);
-    line-height: 1.6;
+    scale: 1.2;
 }
 
 .project_table{
@@ -117,7 +112,6 @@ body {
 }
 
 .project_table td{
-    vertical-align: top;
     padding: 0.5vw;
     text-align: center;
     border-radius: 50px;
@@ -149,11 +143,12 @@ footer{
     }
     #nav_bar {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         justify-items: center;
         height: auto;
         width: auto;
         margin-top: -25px;
+
     }
 
     .project_table table {
@@ -162,7 +157,6 @@ footer{
         border-spacing: 0.1rem;
         padding: 15px;
         overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
     }
 
     .project_table td, .project_table th {
