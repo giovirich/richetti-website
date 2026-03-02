@@ -2,7 +2,7 @@
 
 *{
     padding: 0;
-    bottom: 0;
+    margin: 0;
     box-sizing: border-box;
     font-family: "Archivo", sans-serif;
 }
@@ -22,16 +22,18 @@
 }
 
 body{
-    transition: background-color 0.5s ease, transform 0.5s ease;
+    display: flex;
+    flex-direction: column;
     height: 100dvh;
     overflow: hidden;
+    transition: background-color 0.5s ease, transform 0.5s ease;
+    max-width: auto;
 }
 
 .bodyHeader{
-    position: relative;
-    display: grid;
+    display: flex;
     justify-content: center;
-    margin-bottom: -250px;
+    padding-bottom: 75px;
 }
 
 .bodyHeader > #textChange:hover{
@@ -48,16 +50,13 @@ body{
 .buttonContainer{
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    height: 100dvh;
-    align-items: center;
 }
 
 .buttons{
-    display: grid;
-    grid-template-columns: 1fr;
-    box-sizing: border-box;
-    row-gap: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
 }
 
 .buttons > button{
