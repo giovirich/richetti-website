@@ -28,7 +28,8 @@ body{
 }
 
 .bodyHeader{
-    display: flex;
+    position: relative;
+    display: grid;
     justify-content: center;
     margin-bottom: -250px;
 }

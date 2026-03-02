@@ -214,8 +214,7 @@ fieldset {
     .nav_bar nav{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        font-size: 18px;
-        column-gap: 50px;
+        font-size: 16px;
         row-gap: 50px;
     }
     .center_container .form_container {
