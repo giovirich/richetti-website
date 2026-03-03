@@ -70,6 +70,10 @@ body{
     transition: transform 0.5s ease;
 }
 
+/* #bgBtn, #regretBtn, #forBtn {
+    transition: transform 2s ease-in-out;
+} */
+
 .buttons p{
     display: flex;
     justify-content: center;
@@ -84,6 +88,9 @@ body{
 }
 .buttons button:nth-child(3){
     background: linear-gradient(45deg, #bbe20c, #4cc1f0);
+}
+.buttons button:nth-child(4){
+    background: linear-gradient(45deg, #fb12ff, #55ff9c);
 }
 
 @media (max-width: 768px) {

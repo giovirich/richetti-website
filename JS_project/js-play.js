@@ -75,3 +75,13 @@ forBtn.addEventListener("click", function(){
     restartText(5);
 });
 
+let helicopterBtn = document.getElementById("helicopterBtn");
+helicopterBtn.addEventListener("click", function(){
+    for(let rotation = 0; rotation){
+        currentRotation += 1440;
+        reverseRotation -= 1440;
+        bgBtn.style.transform = `rotate(${currentRotation}deg)`;
+        regretBtn.style.transform = `rotate(${reverseRotation}deg)`;
+        forBtn.style.transform = `rotate(${currentRotation}deg)`;
+    }
+});
