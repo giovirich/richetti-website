@@ -1,0 +1,72 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact State</title>
+    <link rel="icon" type="image/svg" href="./media/Seal_of_Rhode_Island_(2021).svg">
+    <link rel="stylesheet" href="./home_page.css">
+    <script src="./contact_state.js" defer></script>
+</head>
+<body>
+    <div class="headerLogo">
+        <header>
+            <div class="header-text">
+                <h1>Welcome to the Ocean State</h1>
+                <h2>Rhode Island</h2>
+            </div>
+            <img src="./media/State of RI Logo.png" alt="State of Rhode Island logo" height="300px" width="300px">
+        </header>
+    </div>
+
+    <div class="nav_cont">
+        <nav class="nav_bar">
+            <a href="./home_page.html">Home</a>
+            <a href="./providence.html">Providence</a>
+            <a href="./warwick.html">Warwick</a>
+            <a href="./newport.html">Newport</a>
+            <a href="./contact_state.html">Contact State</a>
+        </nav>
+    </div>
+
+    <main>
+        <div class="containerBox">
+            <div class="leftSide">
+            <img src="./media/contact state.jpg" alt="state contact info" width="650px" height="550px">
+            </div>
+
+            <div class="form_container">
+                <h3>Send a message</h3>
+                <form onsubmit=" return validateEmail()">
+                    <div class="containers">
+                        <label for="firstName">First name</label>
+                        <input type="text" name="firstName" id="firstName" required>
+
+                        <label for="lastName">Last name</label>
+                        <input type="text" name="lastName" id="lastName" required>
+
+                        <label for="myEmail">Email Address:</label>
+                        <input type="email" name="myEmail" id="myEmail" required>
+
+                        <label for="confirmEmail">Re-enter Email</label>
+                        <input type="email" name="confirmEmail" id="confirmEmail" required>
+
+                        <label for="myTA">Message: </label>
+                        <textarea name="myTA" id="myTA" cols="50" rows="4" required></textarea>
+                    </div>
+
+                    <div id="form_buttons">
+                    <input type="submit" name="submitBtn" id="submitBtn" value="Submit message">
+                    </div>
+                </form>
+                
+            </div>
+        </div>
+    </main>
+    
+
+    <footer>
+        <small style="color: rgb(255, 0, 0);"> <sup>&copy;</sup> Giovanni Richetti. All rights reserved.</small>
+    </footer>
+
+</body>
+</html>
