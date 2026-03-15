@@ -1,8 +1,8 @@
-// let stateCapitals = {
-//     MA: "Boston",
-//     RI: "Providence",
-//     CT: "Hartford"   
-// };
+let stateCapitals = {
+    MA: "Boston",
+    RI: "Providence",
+    CT: "Hartford"   
+};
 
 // console.log("All states capitals:")
 // for(let state in stateCapitals){
@@ -39,13 +39,13 @@ for (let course in courses){
 }
 
 
-let kkk = Object.keys(courses);
-console.log(kkk);
-console.log(kkk.length);
+// let kkk = Object.keys(courses);
+// console.log(kkk);
+// console.log(kkk.length);
 
-if ("160" in courses){
-    console.log("170 exist");
-}
-else{
-    console.log("Chinga tu madre");
-};
+// if ("160" in courses){
+//     console.log("170 exist");
+// }
+// else{
+//     console.log("Chinga tu madre");
+// };

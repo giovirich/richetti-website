@@ -174,3 +174,45 @@ footer{
     border-radius: 40px;
     padding: 20px;
 }
+
+.leftSide{
+    position: relative;
+    top: -40px;
+    right: 8px;
+}
+
+.abs_cont{
+    position: absolute;
+    bottom: -180px;
+    left: 180px;
+}
+
+
+.form_container label{
+    display: grid;
+    font-size: 20px;
+}
+
+.form_container .containers input[type="text"],
+.form_container .containers input[type="email"]{
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 0.5rem;
+    width: 300px;
+    
+}
+
+.form_container .containers textarea{
+    text-align: center;
+}
+
+#form_buttons input[type="submit"]{
+    width: 250px;
+    font-size: 1.2rem;
+    padding: 20px;
+    border-radius: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    background: linear-gradient(45deg, #52c1fc, #40f1b9);
+}
