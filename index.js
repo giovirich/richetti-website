@@ -47,6 +47,5 @@ for(let s = 0; s <sopa.length; s++ ){
     };
 };
 
-console.log(`${totalSpaces} spaces`);
 console.log(sopa);
 console.log(sopa.replace("my friend", "Fucka you too"));
