@@ -1,10 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 :root{
     --bg-color: #ffffff;
     --font-color: rgba(34, 83, 168, 0.914);
     --header-color: #d2ff3d;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 *{
     padding: 0;
