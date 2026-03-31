@@ -26,7 +26,7 @@ bgBtn.addEventListener("click", function(){
     textChange.textContent = "WHEEE";
     regretBtn.style.background = randomColor1;
     forBtn.style.background = randomColor2;
-
+                                                                                                                                                                                                                                                                                                                                                                              
     currentRotation += 180;
     reverseRotation -= 180;
     bgBtn.style.transform = `rotate(${currentRotation}deg)`;
