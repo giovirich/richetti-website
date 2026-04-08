@@ -103,30 +103,29 @@ function rotateButtons(){
 
     let helicopterBtn = document.getElementById("helicopterBtn");
     helicopterBtn.addEventListener("click", function(){
-        for(let rotation = 0; rotation < 50; rotation++){
-            currentRotation += 5000;
-            reverseRotation -= 5000;
+        for(let rotation = 0; rotation < 500; rotation++){
+            currentRotation += 180;
+            reverseRotation -= 180;
             bgBtn.style.transform = `rotate(${currentRotation}deg)`;
             regretBtn.style.transform = `rotate(${reverseRotation}deg)`;
             crazyBtn.style.transform = `rotate(${currentRotation}deg)`;
             bgBtn.style.transition = `transform 15s ease-in`;
             regretBtn.style.transition = `transform 15s ease-in`;
             crazyBtn.style.transition = `transform 15s ease-in`;
+
+            document.addEventListener("transitionend", function(){
+                currentRotation = 0;
+                reverseRotation = 0;
+                bgBtn.style.transform = `rotate(${currentRotation}deg)`;
+                regretBtn.style.transform = `rotate(${reverseRotation}deg)`;
+                crazyBtn.style.transform = `rotate(${currentRotation}deg)`;
+                bgBtn.style.transition = `transform 5s ease-out`;
+                regretBtn.style.transition = `transform 5s ease-out`;
+                crazyBtn.style.transition = `transform 5s ease-out`;
+            });
         };
     });
-    document.addEventListener("transitionend", function(){
-        currentRotation = 0;
-        reverseRotation = 0;
-        bgBtn.style.transform = `rotate(${currentRotation}deg)`;
-        regretBtn.style.transform = `rotate(${reverseRotation}deg)`;
-        crazyBtn.style.transform = `rotate(${currentRotation}deg)`;
-        bgBtn.style.transition = `transform 5s ease-out`;
-        regretBtn.style.transition = `transform 5s ease-out`;
-        crazyBtn.style.transition = `transform 5s ease-out`;
-    });
 }
-
-
 
 function changeColorTextInsideButtons(){
     const colors = ["LightGreen", "SkyBlue", "Coral", "Gold", "Plum", "Red", "Purple","Cyan", 
@@ -146,9 +145,9 @@ function changeColorTextInsideButtons(){
         colorChange.addEventListener("mouseout", function(t){
             t.target.style.color = "black";
         });
-
     }
 }
 
 rotateButtons();
 changeColorTextInsideButtons();
+
