@@ -28,3 +28,34 @@ function strSum(a: string, b: string){
 }
 
 console.log(strSum('Hello', 'user'));
+
+// function logError(errorMessage: string){
+//     console.log(errorMessage);
+//     throw new Error(errorMessage);
+// }
+
+// function performJob(cb: (m: string) => void){
+//     //...
+//     cb('Well done');
+// }
+
+// performJob(logError);
+
+type User = {
+    name: string;
+    age: number | string;
+    greet: () => string;
+}
+
+let user: User = {
+    name: 'jose',
+    age: 25,
+    greet() {
+        console.log("Hello there!");
+        return this.name;
+    },
+}
+
+user.greet();
+
+
