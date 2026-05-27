@@ -1,0 +1,10 @@
+"use strict";
+let hobbies = "Hello";
+let users;
+users = 1;
+let mamamia;
+let mamamia2;
+let xplicitValues;
+xplicitValues = [true, 'yes', 25];
+//xplicitValues = [true, 'yes', 'hello'];
+console.log(users, xplicitValues);
