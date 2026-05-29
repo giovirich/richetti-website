@@ -2,8 +2,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Consultation Form</title>
+    <title>Paradigm Pet Professionals</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="./index.js" defer></script>
     <link rel="icon" type="image/png" href="/Resume/media/HTML_5_icon.png">
 </head>
@@ -20,11 +21,29 @@
                         <a href="./index.html">Home</a>
                     </li>
                     <li class="nav-link pexperts">
-                        <a href="#">Pet Care Advice</a>
+                        <a href="#">Pet Care Advice <i class="fa-solid fa-chevron-down"></i></a>
                         <ul class="dropdown">
-                            <li><a href="./cat-owners.html">Cat Owners</a></li>
-                            <li><a href="./dog-owners.html">Dog Owners</a></li>
-                            <li><a href="./fish-owners.html">Fish Owners</a></li>
+                            <li>
+                                <a href="./cat-owners.html">Cat Owners<i class="fa-solid fa-angle-right"></i></a>
+                                <ul class="cat_drop">
+                                    <li><a href="#">Feeding needs</a></li>
+                                    <li><a href="#">Best foods</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="./dog-owners.html">Dog Owners<i class="fa-solid fa-angle-right"></i></a>
+                                <ul class="dog_drop">
+                                    <li><a href="#">Activity needs</a></li>
+                                    <li><a href="#">Toys</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="./fish-owners.html">Fish Owners<i class="fa-solid fa-angle-right"></i></a>
+                                <ul class="fish_drop">
+                                    <li><a href="#">Water testing</a></li>
+                                    <li><a href="#">Environment checklist</a></li>
+                                </ul>
+                            </li>
                         </ul>
                     </li>
                     <li class="nav-link">
@@ -64,7 +83,7 @@
             </div>
             <footer>
                 <table class="contact_info">
-                    <tr><th><img src="./media/ppp-letters.png" alt="Paradigm Pet Professionals Logo" width="200px"></th>
+                    <tr class="table_logo"><th><img src="./media/ppp-letters.png" alt="Paradigm Pet Professionals Logo" width="200px"></th>
                     </tr>
                     <tr>
                         <td><a href="#">About us</a></td>
