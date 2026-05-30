@@ -82,6 +82,11 @@ background-color: #FAFAFA;
     transition: scale 0.3s ease-in-out;
 }
 
+.nav-link a[aria-current="page"]{
+    text-decoration: underline wavy #f3320c;
+    text-underline-offset: 0.5rem;
+}
+
 .nav-link a:hover{
     color: aquamarine;
     scale: 1.1;
