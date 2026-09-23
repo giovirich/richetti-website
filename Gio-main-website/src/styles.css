@@ -13,3 +13,13 @@ body{
     margin: 0;
     padding: 0;
 }
+
+@media(max-width: 600px){
+    body{
+        max-width: 600px;
+        font: 12px;
+        margin: 0;
+        padding: 5px;
+        justify-content: flex-start;
+    }
+}
