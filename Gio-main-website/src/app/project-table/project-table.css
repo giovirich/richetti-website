@@ -57,3 +57,16 @@
     color: rgb(57, 25, 244);
     cursor: text;
 }
+
+.project_table_links a{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(57, 25, 244);
+    transition: scale 0.3s ease-in-out;
+}
+
+.project_table_links a:hover{
+    color: rgb(244, 11, 11);
+    cursor: pointer;
+    scale: 1.3;
+}

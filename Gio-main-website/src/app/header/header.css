@@ -2,7 +2,7 @@ nav{
     display: flex;
     margin-bottom: 2rem;
     background-color: var(--header-color);
-    max-width: 1200px;
+    max-width: 75%;
     margin-inline: auto;
     padding: 0.8rem;
     border-radius: 70px;
@@ -13,8 +13,8 @@ nav{
     justify-content: space-evenly;
     gap: 35rem;
     align-items: center;
-    max-width: 1200px;
     margin: 0 auto;
+    width: 50%;
 }
 
 .nav-links{
@@ -49,4 +49,5 @@ img{
     display: flex;
     margin-inline: auto;
     margin-bottom: 2rem;
+    width: 60%;
 }

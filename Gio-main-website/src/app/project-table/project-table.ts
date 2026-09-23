@@ -6,4 +6,6 @@ import { Component } from '@angular/core';
   templateUrl: './project-table.html',
   styleUrl: './project-table.css',
 })
-export class ProjectTable {}
+export class ProjectTable {
+  title = 'Project Table';
+}
