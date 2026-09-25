@@ -4,6 +4,7 @@ function showDates(){
 
     if(datebox.textContent === ""){
         datebox.textContent = "September 2018 - February 2021";
+        document.getElementById("datebox0").textContent = "June 2026 - Present";
         document.getElementById("datebox1").textContent = "August 2023 - February 2026";
         document.getElementById("datebox2").textContent = "February 2021 - August 2023"
         document.getElementById("datebox3").textContent = "November 2025 - December 2027"
