@@ -1,0 +1,141 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paradigm Pet Professionals</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./index.js" defer></script>
+    <link rel="icon" type="image/png" href="/Resume/media/HTML_5_icon.png">
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <header>
+                <h1>Paradigm Pet <br> Professionals</h1>
+                <img src="./media/ppp-logo.png" alt="Paradigm Pet Professionals Logo" class="logo" height="150px" width="150px">
+            </header>
+            <div class="navbar">
+                <ul class="nav-links">
+                    <li class="nav-link">
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-link pexperts">
+                        <a href="#">Pet Care Advice <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="dropdown">
+                            <li>
+                                <a href="./cat-owners.html">Cat Owners<i class="fa-solid fa-angle-right"></i></a>
+                                <ul class="cat_drop">
+                                    <li><a href="#">Feeding needs</a></li>
+                                    <li><a href="#">Best foods</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="./dog-owners.html">Dog Owners<i class="fa-solid fa-angle-right"></i></a>
+                                <ul class="dog_drop">
+                                    <li><a href="#">Activity needs</a></li>
+                                    <li><a href="#">Toys</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="./fish-owners.html">Fish Owners<i class="fa-solid fa-angle-right"></i></a>
+                                <ul class="fish_drop">
+                                    <li><a href="#">Water testing</a></li>
+                                    <li><a href="#">Environment checklist</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-link">
+                        <a href="./consultation-form.html">Consultation Form</a>
+                    </li>
+
+                    <li class="nav-link faqs">
+                        <a href="#">FAQs <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="faqs_drop">
+                            <li><a href="#">Cats</a></li>
+                            <li><a href="#">Dogs</a></li>
+                            <li><a href="#">Fishes</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-link utility">
+                        <a href="#">Utility links <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="utility_drop">
+                            <li><a href="#">Privacy policy</a></li>
+                            <li><a href="#">Accessibility statement</a></li>
+                            <li><a href="#">Terms of service</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <form>
+                <h2>Contact the Pexperts</h2>
+                <h4>We'll be in touch ASAP</h4>
+                <div class="form_container">
+                    <!-- LEFT SIDE -->
+                    <div class="form_column">
+                        <span>Your information</span>
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" placeholder="Firts and last">
+
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" name="phone" id="phone" placeholder="111-222-3456">
+
+                        <label for="email">Email Address</label>
+                        <input type="email" name="email" id="email" placeholder="myemail@email.com">
+
+                        <label for="verifyEmail">Verify Email Address</label>
+                        <input type="email" name="verifyEmail" id="verifyEmail" placeholder="myemail@email.com">
+
+                        <label for="timeZone">Time Zone</label>
+                        <input type="text" name="timeZone" id="timeZone" placeholder="EST, MT, CT, PT">
+                    </div>
+
+                    <!-- RIGHT SIDE -->
+                    <div class="form_column">
+                        <span>Information about your pet</span>
+                        <label for="petName">Pet Name</label>
+                        <input type="text" name="petName" id="petName" placeholder="Kevin">
+
+                        <label for="petType">Pet Type</label>
+                        <input type="text" name="petType" id="petType" placeholder="Cat, dog, bird, etc">
+
+                        <label for="petAge">Pet Age</label>
+                        <input type="number" name="petAge" id="petAge" placeholder="1">
+
+                        <label for="messageArea">Message</label>
+                        <textarea name="messageArea" id="messageArea" cols="30" rows="10" placeholder="Type in your concern"></textarea>
+                        
+                        <input type="submit" name="submitBtn" id="submitBtn" value="SUBMIT FORM">
+                        
+                    </div>
+                </div>
+            </form>
+            
+            
+            <footer>
+                <div class="table">
+                    <div class="left-table">
+                        <img src="./media/ppp-letters.png" alt="Paradigm Pet Professionals Logo" width="200px">
+                    </div>
+
+                    <div class="right-table">
+                        <ul>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Social media</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">Legal</a></li>
+                            <li><a href="#">Privacy policy</a></li>
+                            <li><a href="#">Terms of service</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <small style="color: rgb(255, 0, 0);"> <sup>&copy;</sup> Giovanni Richetti. All rights reserved.</small>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
