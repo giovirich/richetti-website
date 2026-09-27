@@ -5,7 +5,7 @@
 //     let zip = document.getElementById("zip").value;
 //     let units = "imperial";
 //     const apiUrl = "http://api.openweathermap.org/data/2.5/weather";
-//     const apiKey = "a262f151689742b05f110acd5ff70773";
+//     const apiKey = "";
 //     let queryString = `${apiUrl}?zip=${zip}&units=${units}&appid=${apiKey}`;
 
 //     let xhr = new XMLHttpRequest();
